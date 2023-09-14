@@ -1,0 +1,5 @@
+https://randomnerdtutorials.com/nextion-display-with-arduino-getting-started/
+
+2.5 l- 20 ciklov
+2 l- 25 ciklov
+1.5 l 20 ciklov
