@@ -32,20 +32,20 @@ void b0PopCallback(void *ptr) {
 }
 
 void b1PopCallback(void *ptr) {
-  BtnSpeed = 500;
-  BtnStepNo = 1000;
+  BtnSpeed = 85;
+  BtnStepNo = 8000;
   digitalWrite(ENAPIN, LOW);
 }
 
 void b2PopCallback(void *ptr) {
-  BtnSpeed = 300;
-  BtnStepNo = 1500;
+  BtnSpeed = 50;
+  BtnStepNo = 11000;
   digitalWrite(ENAPIN, LOW);
 }
 
 void b3PopCallback(void *ptr) {
-  BtnSpeed = 100;
-  BtnStepNo = 3000;
+  BtnSpeed = 40; //to bo potem hitrost 20 al manj
+  BtnStepNo = 13500;
   digitalWrite(ENAPIN, LOW);
 }
 
