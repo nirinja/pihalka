@@ -33,7 +33,7 @@ void b0PopCallback(void *ptr) {
 }
 
 void b1PopCallback(void *ptr) {
-  BtnSpeed = 85;
+  BtnSpeed = 90;
   BtnStepNo = 8000;
   digitalWrite(ENAPIN, LOW);
 }
@@ -45,7 +45,7 @@ void b2PopCallback(void *ptr) {
 }
 
 void b3PopCallback(void *ptr) {
-  BtnSpeed = 40; //TODO: hitrost se spemeni na 20 al manj (da bo hitrejši)
+  BtnSpeed = 23;
   BtnStepNo = 13500;
   digitalWrite(ENAPIN, LOW);
 }
