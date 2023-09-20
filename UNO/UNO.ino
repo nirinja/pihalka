@@ -26,6 +26,7 @@ NexTouch *nex_listen_list[] = {
   NULL
 };
 
+//gumbi
 void b0PopCallback(void *ptr) {
   BtnSpeed = 0;
   BtnStepNo = 0;
@@ -44,7 +45,7 @@ void b2PopCallback(void *ptr) {
 }
 
 void b3PopCallback(void *ptr) {
-  BtnSpeed = 40; //to bo potem hitrost 20 al manj
+  BtnSpeed = 40; //TODO: hitrost se spemeni na 20 al manj (da bo hitrejši)
   BtnStepNo = 13500;
   digitalWrite(ENAPIN, LOW);
 }
@@ -57,9 +58,9 @@ void setup() {
   b2.attachPop(b2PopCallback, &b2);
   b3.attachPop(b3PopCallback, &b3);
 
-  pinMode(STEPPIN, OUTPUT); // Corrected to use STEPPIN
-  pinMode(DIRPIN, OUTPUT);  // Corrected to use DIRPIN
-  pinMode(ENAPIN, OUTPUT); // Corrected to use ENAPIN
+  pinMode(STEPPIN, OUTPUT);
+  pinMode(DIRPIN, OUTPUT); 
+  pinMode(ENAPIN, OUTPUT);
 
   digitalWrite(DIRPIN, LOW);  // low => spinningDirection = true
   digitalWrite(ENAPIN, HIGH); //High => onemogočen motor- se ne premika
@@ -74,9 +75,9 @@ void loop() {
   }
 
   if(Speed != 0 && StepNo != 0 ){
-    digitalWrite(STEPPIN, HIGH);  // Corrected to use STEPPIN
+    digitalWrite(STEPPIN, HIGH); 
     delayMicroseconds(Speed);
-    digitalWrite(STEPPIN, LOW);  // Corrected to use STEPPIN
+    digitalWrite(STEPPIN, LOW);
     delayMicroseconds(Speed);
     stepCount++;
 

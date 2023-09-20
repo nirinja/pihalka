@@ -1,5 +1,20 @@
-https://randomnerdtutorials.com/nextion-display-with-arduino-getting-started/
+kako delati z arduino krmilnikom: https://randomnerdtutorials.com/nextion-display-with-arduino-getting-started/
+kako povezati steper in step driver: https://mytectutor.com/tb6600-stepper-motor-driver-with-arduino/
 
-2.5 l- 20 ciklov
-2 l- 25 ciklov
-1.5 l 20 ciklov
+Če hočes uporabljati arduino krmilnik:
+1. install arduino IDE
+2. če želis uporabliat arduino z nextion zaslonom
+ 	2.1 : pojdi na https://randomnerdtutorials.com/nextion-display-with-arduino-getting-started/ in Downloading Nextion Libraries sledi navodilom
+	2.2: pojdi v C:\Users\*ime*\Documents\Arduino\libraries in preveri da je ITEADLIB_Arduino_Nextion edina knjižnica od Nextiona v tej mapi
+3. napisi/popravi kodo (FYI: manjši kot je delayMicroseconds hitreje se vrti)
+4. povezemo se z micro USB (vklopjen v arduino krmilnik) <--> usb (v naš komp računalik)
+5. v arduino IDE v vrhni vrstici izberi pravi bord in pravi port in se povezes
+6. modro in rumeno žico (pin RX, TX) izklopi iz Nixton displaya oz iz arduino  borda
+7. arduino IDE v zgorni vrstici levo pritisni upload (ikona puščice ->)
+8.ko arduino IDE napise done uploading nazaj povezi RX in TX
+
+
+*************************************************************
+100L/min => 2.5L * 40 ciklov /min
+50L/min => 2 l * 25 ciklov /min
+30L/min => 1.5 l * 20 ciklov /mins
